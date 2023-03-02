@@ -45,7 +45,7 @@
 		</plugins>
 	</build>
 	<scm>
-		<developerConnection></developerConnection>
+		<developerConnection>scm:git:https://github.com/DakotaAGarcia/spring5petclinic.git</developerConnection>
 	</scm>
 	<repositories>
 		<repository>
