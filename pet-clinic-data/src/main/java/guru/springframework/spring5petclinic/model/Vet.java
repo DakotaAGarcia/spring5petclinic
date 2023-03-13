@@ -1,9 +1,15 @@
 package guru.springframework.spring5petclinic.model;
 
 import jakarta.persistence.*;
+import lombok.*;
 
 import java.util.HashSet;
 import java.util.Set;
+@Setter
+@Getter
+@NoArgsConstructor
+@AllArgsConstructor
+@Builder
 @Entity
 @Table(name = "vets")
 public class Vet extends Person{
@@ -12,11 +18,4 @@ public class Vet extends Person{
 
     private Set<Specialty> specialities = new HashSet<>();
 
-    public Set<Specialty> getSpecialities() {
-        return specialities;
-    }
-
-    public void setSpecialities(Set<Specialty> specialities) {
-        this.specialities = specialities;
-    }
 }
